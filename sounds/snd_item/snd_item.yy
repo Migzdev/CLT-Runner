@@ -4,7 +4,7 @@
   "name": "snd_item",
   "conversionMode": 0,
   "compression": 0,
-  "volume": 0.05,
+  "volume": 0.3,
   "preload": false,
   "bitRate": 128,
   "sampleRate": 44100,
@@ -15,7 +15,7 @@
     "path": "audiogroups/audiogroup_default",
   },
   "soundFile": "snd_item.wav",
-  "duration": 0.140023,
+  "duration": 0.259342,
   "parent": {
     "name": "Sons",
     "path": "folders/Sons.yy",

@@ -3,4 +3,13 @@
 
 y = y +vel;
 
+draw_self()
+if (x < 180)
+{
+	image_xscale = 1;
+}
+else if (x > 180)
+{
+    image_xscale = -1;
+}
 
