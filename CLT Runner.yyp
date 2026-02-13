@@ -3,8 +3,12 @@
   "resourceVersion": "1.6",
   "name": "CLT Runner",
   "resources": [
+    {"id":{"name":"spr_menu","path":"sprites/spr_menu/spr_menu.yy",},"order":12,},
+    {"id":{"name":"spr_botao_jogar","path":"sprites/spr_botao_jogar/spr_botao_jogar.yy",},"order":11,},
+    {"id":{"name":"spr_toque","path":"sprites/spr_toque/spr_toque.yy",},"order":13,},
     {"id":{"name":"snd_levelup","path":"sounds/snd_levelup/snd_levelup.yy",},"order":5,},
     {"id":{"name":"obj_chocolate","path":"objects/obj_chocolate/obj_chocolate.yy",},"order":3,},
+    {"id":{"name":"rm_final","path":"rooms/rm_final/rm_final.yy",},"order":2,},
     {"id":{"name":"obj_coxinha","path":"objects/obj_coxinha/obj_coxinha.yy",},"order":4,},
     {"id":{"name":"spr_batata","path":"sprites/spr_batata/spr_batata.yy",},"order":6,},
     {"id":{"name":"snd_item","path":"sounds/snd_item/snd_item.yy",},"order":0,},
@@ -17,6 +21,7 @@
     {"id":{"name":"snd_fundo","path":"sounds/snd_fundo/snd_fundo.yy",},"order":1,},
     {"id":{"name":"spr_player","path":"sprites/spr_player/spr_player.yy",},"order":0,},
     {"id":{"name":"obj_player","path":"objects/obj_player/obj_player.yy",},"order":0,},
+    {"id":{"name":"rm_inicial","path":"rooms/rm_inicial/rm_inicial.yy",},"order":1,},
     {"id":{"name":"obj_controle","path":"objects/obj_controle/obj_controle.yy",},"order":8,},
     {"id":{"name":"spr_colisao","path":"sprites/spr_colisao/spr_colisao.yy",},"order":7,},
     {"id":{"name":"spr_start","path":"sprites/spr_start/spr_start.yy",},"order":9,},
@@ -30,8 +35,9 @@
     {"id":{"name":"spr_chocolate","path":"sprites/spr_chocolate/spr_chocolate.yy",},"order":4,},
     {"id":{"name":"snd_jump","path":"sounds/snd_jump/snd_jump.yy",},"order":2,},
     {"id":{"name":"spr_coxinha","path":"sprites/spr_coxinha/spr_coxinha.yy",},"order":3,},
+    {"id":{"name":"obj_botao_jogar","path":"objects/obj_botao_jogar/obj_botao_jogar.yy",},"order":10,},
     {"id":{"name":"spr_clt","path":"sprites/spr_clt/spr_clt.yy",},"order":2,},
-    {"id":{"name":"Room1","path":"rooms/Room1/Room1.yy",},"order":0,},
+    {"id":{"name":"rm_game","path":"rooms/rm_game/rm_game.yy",},"order":0,},
   ],
   "Options": [
     {"name":"Android","path":"options/android/options_android.yy",},
@@ -51,7 +57,9 @@
     "children": [],
   },
   "RoomOrderNodes": [
-    {"roomId":{"name":"Room1","path":"rooms/Room1/Room1.yy",},},
+    {"roomId":{"name":"rm_inicial","path":"rooms/rm_inicial/rm_inicial.yy",},},
+    {"roomId":{"name":"rm_game","path":"rooms/rm_game/rm_game.yy",},},
+    {"roomId":{"name":"rm_final","path":"rooms/rm_final/rm_final.yy",},},
   ],
   "Folders": [
     {"resourceType":"GMFolder","resourceVersion":"1.0","name":"Anotações","folderPath":"folders/Anotações.yy","order":13,},

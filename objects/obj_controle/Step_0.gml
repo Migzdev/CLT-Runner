@@ -1,20 +1,14 @@
 /// @description Inserir descrição aqui
 // Você pode escrever seu código neste editor
- 
+
 if (global.vida_player = 0)
 {
-	
 	global.game_over = true
-	audio_play_sound(snd_game_over,0,1);
-	audio_stop_sound(snd_levelup);
-	audio_stop_sound(snd_fundo);
-	audio_stop_sound(snd_click);
-	audio_stop_sound(snd_hit);
-	audio_stop_sound(snd_item);
-	audio_stop_sound(snd_jump);
+	audio_stop_sound(snd_fundo)
+	audio_play_sound(snd_game_over,100,0);
 }
-
-if(instance_exists(obj_player))
+ 
+if(instance_exists(obj_player) and global.game_over == false)
 {
 	global.distancia += 1;
     show_debug_message(global.distancia);
@@ -22,7 +16,7 @@ if(instance_exists(obj_player))
 
 #region SPAWNANDO OS ITENS
 
-if (instance_exists(obj_player))
+if (instance_exists(obj_player) and global.game_over == false)
 {
     if (global.distancia = 250)
     {
@@ -42,10 +36,12 @@ if (instance_exists(obj_player))
 		alarm[4] = room_speed;
 	}
 }
-
 #endregion
 
 #region DIFICULDADE DO JOGO
+
+if (global.game_over == false)
+{
 
 if (global.distancia = 2000)
 {
@@ -74,6 +70,7 @@ if (global.distancia = 20000)
 	audio_play_sound(snd_levelup,1,false);
 	
 }	
+}
 #endregion
 
 

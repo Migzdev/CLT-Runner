@@ -17,17 +17,8 @@ if (global.game_over == true)
 	}
 	
 	image_alpha += alfa;
-	timer = timer -1;
-	
-	if(timer <= 0)
-	{
-		global.game_over = false;
-		global.game_start = false;
-		
-		timer = room_speed * 3;
-		game_restart();
-		
-	}
+	timer += timer -1;
+
 }
 
 

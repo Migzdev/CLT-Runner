@@ -1,11 +1,8 @@
 /// @description Inserir descrição aqui
 // Você pode escrever seu código neste editor
 
-if (global.game_start == false)
-{
-	var center_x = room_width / 2;
-	var center_y = room_height / 2;
-	
-	draw_sprite_ext(spr_start,(get_timer()/1000000)*10,center_x,center_y,4,4,0,c_white,1);
+draw_text(55,35,"Pontos: " + string(global.pontos));
+draw_text(55,10,"Vida: " + string(global.vida_player));
+draw_text(190,35,"Distancia: " + string(global.distancia));
+draw_text(190,10,"Dificuldade: " + string(global.dificuldade));
 
-}
